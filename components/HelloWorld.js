@@ -1,5 +1,3 @@
-// Mithril component
-
 var count = 0;
 
 var HelloWorld = {
