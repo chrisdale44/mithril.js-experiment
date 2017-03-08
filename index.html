@@ -5,6 +5,7 @@
 <body>
     <script src="//unpkg.com/mithril/mithril.js"></script>
     <script src="./HelloWorld.js"></script>
+    <script src="./Splash.js"></script>
     <script>
         var root = document.body
 
@@ -13,7 +14,10 @@
         //     m("button", "a button")
         // ])
 
-        m.mount(root, HelloWorld)
+        m.route(root, "/splash", {
+            "/splash": Splash,
+            "/hello": HelloWorld,
+        })
 
     </script>
 </body>
